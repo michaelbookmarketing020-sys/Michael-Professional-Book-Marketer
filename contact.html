@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Michael to discuss your book marketing project. Share your book details, genre, and goals using the contact form or by email.">
+    <meta name="keywords" content="contact book marketer, book marketing enquiry, author marketing contact, Michael book marketing">
+    <meta name="author" content="Michael">
+    <title>Contact Me | Michael Professional Book Marketing</title>
+    <link rel="icon" type="image/png" href="my logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============ HEADER / NAVIGATION ============ -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a href="index.html" class="brand">
+                <img src="my logo.png" alt="Michael Professional Book Marketing Logo" class="brand-logo">
+                <span class="brand-text">
+                    <span class="brand-name">Michael</span>
+                    <span class="brand-tag">Professional Book Marketing</span>
+                </span>
+            </a>
+
+            <nav class="main-nav" aria-label="Primary navigation">
+                <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="about.html" class="nav-link">About Me</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1920&q=80" alt="A writing desk with an open notebook and pen" loading="eager">
+        </div>
+        <div class="container page-hero-inner">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Contact Me</span>
+            </div>
+            <h1>Let's Talk About Your Book.</h1>
+            <p>Share a little about your project and I will respond personally. Every message is read carefully and answered as promptly as possible.</p>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <section class="contact-section">
+        <div class="container contact-grid">
+
+            <!-- Contact Information -->
+            <div class="contact-info reveal">
+                <span class="section-eyebrow">Get in Touch</span>
+                <h2>A Thoughtful Reply to Every Enquiry.</h2>
+                <p>Whether you are preparing a launch, reviving a backlist title, or exploring book marketing for the first time, I welcome the chance to hear about your work. The more you share about your book and your goals, the more useful my first response can be.</p>
+
+                <div class="contact-detail">
+                    <div class="contact-detail-label">Email</div>
+                    <a href="mailto:michael.bookmarketing020@gmail.com">michael.bookmarketing020@gmail.com</a>
+                    <p class="contact-detail-note">For direct enquiries, project discussions, and existing client correspondence.</p>
+                </div>
+
+                <div class="contact-detail">
+                    <div class="contact-detail-label">Response Time</div>
+                    <span class="contact-detail-value">Within one to two business days</span>
+                    <p class="contact-detail-note">Every message is read and answered personally, not by an automated system.</p>
+                </div>
+
+                <div class="contact-detail">
+                    <div class="contact-detail-label">What Happens Next</div>
+                    <span class="contact-detail-value">A real conversation, not a sales pitch</span>
+                    <p class="contact-detail-note">If your project looks like a good fit, I will suggest the services or package most likely to support your goals. There is no obligation at that stage.</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-wrap reveal">
+                <h3>Send a Message</h3>
+                <p>Please share the details below. Fields marked with an asterisk are required.</p>
+
+                <form id="contactForm" action="https://formspree.io/f/xyeeqogk" method="POST" novalidate>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name <span class="required">*</span></label>
+                            <input type="text" id="fullName" name="Full Name" class="form-control" required autocomplete="name" placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="Email" class="form-control" required autocomplete="email" placeholder="you@example.com">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookTitle">Book Title <span class="required">*</span></label>
+                            <input type="text" id="bookTitle" name="Book Title" class="form-control" required placeholder="The title of your book">
+                        </div>
+                        <div class="form-group">
+                            <label for="bookGenre">Book Genre <span class="required">*</span></label>
+                            <input type="text" id="bookGenre" name="Book Genre" class="form-control" required placeholder="e.g. Literary Fiction, Thriller, Memoir">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="serviceRequired">Service Required <span class="required">*</span></label>
+                        <select id="serviceRequired" name="Service Required" class="form-control" required>
+                            <option value="">Please choose a service</option>
+                            <option value="Book Branding and Creative Design">Book Branding and Creative Design</option>
+                            <option value="Book Promotion and Advertising">Book Promotion and Advertising</option>
+                            <option value="Reader Outreach and Audience Development">Reader Outreach and Audience Development</option>
+                            <option value="Amazon and Book Discoverability">Amazon and Book Discoverability</option>
+                            <option value="Author Brand and Digital Presence">Author Brand and Digital Presence</option>
+                            <option value="Publicity and Media Outreach">Publicity and Media Outreach</option>
+                            <option value="Marketing Strategy and Campaign Management">Marketing Strategy and Campaign Management</option>
+                            <option value="Essential Book Promotion Package">Essential Book Promotion Package</option>
+                            <option value="Professional Book Marketing Package">Professional Book Marketing Package</option>
+                            <option value="Comprehensive Book Marketing Package">Comprehensive Book Marketing Package</option>
+                            <option value="Not Sure Yet">Not sure yet, I would like guidance</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="projectDescription">Brief Project Description <span class="required">*</span></label>
+                        <textarea id="projectDescription" name="Project Description" class="form-control" rows="6" required placeholder="Tell me about your book, where it is in its journey, and what you are hoping to achieve."></textarea>
+                    </div>
+
+                    <!-- Honeypot anti-spam field -->
+                    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+                    <!-- Formspree subject line -->
+                    <input type="hidden" name="_subject" value="New Book Marketing Enquiry from Website">
+
+                    <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                        <span id="submitText">Send Message</span>
+                    </button>
+
+                    <div class="form-feedback" id="formFeedback" role="status" aria-live="polite"></div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============ WHAT TO EXPECT SECTION ============ -->
+    <section class="intro-section" style="background: var(--color-white);">
+        <div class="container">
+            <div class="section-head centered">
+                <span class="section-eyebrow">After You Reach Out</span>
+                <h2 class="section-title">A Simple, Respectful Process.</h2>
+                <p class="section-intro">What happens after you send your message, laid out plainly so you know exactly what to expect.</p>
+            </div>
+
+            <div class="approach-list" style="margin-top: 3rem;">
+                <div class="approach-item reveal">
+                    <div class="approach-item-num" style="color: var(--color-gold);">01</div>
+                    <div>
+                        <h4 style="color: var(--color-navy);">A Personal Reply</h4>
+                        <p style="color: var(--color-text-soft);">You will receive a personal email response, usually within one to two business days. The reply will acknowledge your enquiry and ask any follow-up questions needed to understand your project properly.</p>
+                    </div>
+                </div>
+                <div class="approach-item reveal">
+                    <div class="approach-item-num" style="color: var(--color-gold);">02</div>
+                    <div>
+                        <h4 style="color: var(--color-navy);">A Thoughtful Recommendation</h4>
+                        <p style="color: var(--color-text-soft);">Based on what you share, I will suggest the service or package that looks most relevant for your book. If a different approach would serve you better than what you initially asked about, I will tell you.</p>
+                    </div>
+                </div>
+                <div class="approach-item reveal">
+                    <div class="approach-item-num" style="color: var(--color-gold);">03</div>
+                    <div>
+                        <h4 style="color: var(--color-navy);">A Clear Quote</h4>
+                        <p style="color: var(--color-text-soft);">Once the scope is agreed, you will receive a transparent quote with no hidden costs, along with a clear sense of timelines and what is included.</p>
+                    </div>
+                </div>
+                <div class="approach-item reveal">
+                    <div class="approach-item-num" style="color: var(--color-gold);">04</div>
+                    <div>
+                        <h4 style="color: var(--color-navy);">Your Decision, Without Pressure</h4>
+                        <p style="color: var(--color-text-soft);">You decide whether to move forward. There is no follow-up pressure and no obligation. If the timing or fit is not right, that is perfectly fine.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3 class="footer-brand-name">Michael</h3>
+                <p class="footer-brand-tag">Professional Book Marketing</p>
+                <p class="footer-brand-text">Thoughtful marketing for authors who care about their craft and the readers they write for.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Get in Touch</h4>
+                <p class="footer-email">
+                    <a href="mailto:michael.bookmarketing020@gmail.com">michael.bookmarketing020@gmail.com</a>
+                </p>
+                <p class="footer-note">For author enquiries, campaign discussions, and project collaborations.</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>&copy; <span id="currentYear"></span> Michael. Professional Book Marketing. All rights reserved.</p>
+                <p class="footer-credit">Crafted with care for authors and their readers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ INLINE JAVASCRIPT ============ -->
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Mobile nav
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        navToggle.addEventListener('click', () => {
+            const isOpen = navMenu.classList.toggle('open');
+            navToggle.classList.toggle('active', isOpen);
+            navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('open');
+                navToggle.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Header scroll
+        const siteHeader = document.getElementById('siteHeader');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 40) {
+                siteHeader.classList.add('scrolled');
+            } else {
+                siteHeader.classList.remove('scrolled');
+            }
+        });
+
+        // Contact form validation and submission
+        const form = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const submitText = document.getElementById('submitText');
+        const feedback = document.getElementById('formFeedback');
+
+        function isValidEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email);
+        }
+
+        function showFeedback(message, type) {
+            feedback.textContent = message;
+            feedback.className = 'form-feedback ' + type;
+        }
+
+        function clearFeedback() {
+            feedback.textContent = '';
+            feedback.className = 'form-feedback';
+        }
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            clearFeedback();
+
+            // Basic validation
+            const fullName = form.fullName.value.trim();
+            const email = form.email.value.trim();
+            const bookTitle = form.bookTitle.value.trim();
+            const bookGenre = form.bookGenre.value.trim();
+            const serviceRequired = form.serviceRequired.value;
+            const description = form.projectDescription.value.trim();
+
+            if (!fullName || !email || !bookTitle || !bookGenre || !serviceRequired || !description) {
+                showFeedback('Please complete all required fields before sending.', 'error');
+                return;
+            }
+
+            if (!isValidEmail(email)) {
+                showFeedback('Please enter a valid email address.', 'error');
+                return;
+            }
+
+            // Loading state
+            submitBtn.disabled = true;
+            submitText.textContent = 'Sending...';
+
+            try {
+                const formData = new FormData(form);
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    showFeedback('Thank you. Your message has been sent successfully. I will be in touch soon.', 'success');
+                    form.reset();
+                } else {
+                    const data = await response.json().catch(() => ({}));
+                    const errorMsg = (data && data.errors && data.errors.length)
+                        ? data.errors.map(err => err.message).join(', ')
+                        : 'Something went wrong while sending your message. Please try again or email directly.';
+                    showFeedback(errorMsg, 'error');
+                }
+            } catch (err) {
+                showFeedback('A network error occurred. Please check your connection and try again, or email directly.', 'error');
+            } finally {
+                submitBtn.disabled = false;
+                submitText.textContent = 'Send Message';
+            }
+        });
+
+        // Reveal animations
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const revealEls = document.querySelectorAll('.reveal');
+
+        if (prefersReducedMotion) {
+            revealEls.forEach(el => el.classList.add('is-visible'));
+        } else if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+
+            revealEls.forEach(el => observer.observe(el));
+        } else {
+            revealEls.forEach(el => el.classList.add('is-visible'));
+        }
+    </script>
+</body>
+</html>
